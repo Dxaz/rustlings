@@ -11,7 +11,13 @@ impl PositiveNonzeroInteger {
     fn new(value: i64) -> Result<Self, CreationError> {
         // TODO: This function shouldn't always return an `Ok`.
         // Read the tests below to clarify what should be returned.
-        Ok(Self(value as u64))
+        //Ok(Self(value as u64))
+        let is_negative = value.to_string().parse::<u64>();
+        match is_negative {
+            Ok(int) if int > 0 => Ok(PositiveNonzeroInteger(int)),
+            Ok(0) => Err(CreationError::Zero),
+            _ => Err(CreationError::Negative),
+        }
     }
 }
 
