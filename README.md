@@ -58,7 +58,7 @@ rustlings hint <exercise_name>
 
 ---
 
-## Exercise–Chapter Map
+## Exercise–Chapter Map 📖
 
 
 | Exercise Topic   | Corresponding Chapter         |
@@ -90,7 +90,7 @@ rustlings hint <exercise_name>
 
 ---
 
-## Uninstallation
+## Uninstall ❌
 
 ```bash
 rm -rf rustlings
