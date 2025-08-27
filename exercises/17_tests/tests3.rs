@@ -37,8 +37,6 @@ mod tests {
         let _rect = Rectangle::new(-10, 10);
     }
 
-    // TODO: This test should check if the program panics when we try to create
-    // a rectangle with negative height.
     #[test]
     #[should_panic]
     fn negative_height() {
