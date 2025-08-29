@@ -3,7 +3,6 @@
 // going out of scope before it is used. Remember, references are borrows and do
 // not own their own data. What if their owner goes out of scope?
 
-// TODO: Fix the compiler error by updating the function signature.
 fn longest<'input>(x: &'input str, y: &'input str) -> &'input str {
     if x.len() > y.len() {
         x
